@@ -1,16 +1,16 @@
 # Pongify
 A bare-bones tool to pingpong your video clips for creators,<br>
-especially those harnessing the power of AI via RunwayML and PikaLabs.<br>
+especially those harnessing the power of AI via <a href="https://runwayml.com/">RunwayML</a> and <a href="https://www.pika.art/">PikaLabs.</a><br>
 Turn short moments into captivating minute-long masterpieces! 🔄 🎞️
 
 ### Features 🌟
-Supports: MP4, MOV, and GIF formats.<br>
-Duration Expansion: Convert a 4-second video into a dynamic 1-minute pingpong sequence.<br>
+<b>Supports:</b> MP4, MOV, and GIF formats.<br>
+<b>Duration Expansion:</b> Convert a 4-second video into a dynamic 1-minute pingpong sequence.<br>
 
 ### Try It 🛠️
 [Click here to try Pongify!](https://bitpixi.github.io/pongify/templates/index.html) (coming soon!)
 
-#### Contribute 🤝
+### Contribute 🤝
 If you have suggestions or encounter any issues, please create an issue or submit a pull request.
 
 ### Support Pongify 🙌
