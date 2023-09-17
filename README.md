@@ -6,8 +6,8 @@ Supports: MP4, MOV, and GIF formats.
 Duration Expansion: Convert a 4-second video into a dynamic 1-minute pingpong sequence.
 Intuitive Interface: Easy-to-use, ensuring a seamless experience.
 
-### Installation 🛠️
-(Coming soon)
+### Try It 🛠️
+[Click here to try Pongify!](https://bitpixi.github.io/pongify/templates/index.html)
 
 #### Contribute 🤝
 Contributions are more than welcome! If you have suggestions or encounter any issues, please create an issue or submit a pull request.
