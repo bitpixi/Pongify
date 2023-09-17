@@ -1,0 +1,13 @@
+Notes to myself 
+
+processed/ (optional)
+
+Python:
+
+from flask import send_from_directory
+
+@app.route('/download/<filename>', methods=['GET', 'POST'])
+def download(filename):
+    return send_from_directory(directory='uploads', filename=filename, as_attachment=True)
+
+Use Heroku to deploy and storage is temporary. Warn users on how long their link will be up for.
