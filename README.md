@@ -7,7 +7,7 @@ Duration Expansion: Convert a 4-second video into a dynamic 1-minute pingpong se
 Intuitive Interface: Easy-to-use, ensuring a seamless experience.
 
 ### Try It 🛠️
-[Click here to try Pongify!](https://bitpixi.github.io/pongify/templates/index.html)
+[Click here to try Pongify!](https://bitpixi.github.io/pongify/templates/index.html) (coming soon!)
 
 #### Contribute 🤝
 Contributions are more than welcome! If you have suggestions or encounter any issues, please create an issue or submit a pull request.
