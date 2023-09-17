@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pongify - PingPong your videos!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #2c2c2c; /* Dark gray background */
+            color: #eaeaea; /* Light gray text */
+        }
+        .btn-custom {
+            background-color: dodgerblue;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: deepskyblue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card bg-dark">
+                    <div class="card-header">
+                        <h3 class="card-title">Pongify your Video</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="/upload" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="file">Choose a video file (MP4, MOV, or GIF)</label>
+                                <input type="file" class="form-control-file" id="file" name="file">
+                            </div>
+                            <button type="submit" class="btn btn-custom">Pongify!</button>
+                            <!-- Spinner added here -->
+                            <div id="loadingSpinner" class="spinner-border text-primary ml-3" role="status" style="display: none;">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional Bootstrap JS, jQuery, and Popper.js for things like dropdowns, modals, etc. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript for Spinner -->
+    <script>
+        $(document).ready(function() {
+            $("form").on("submit", function() {
+                $("#loadingSpinner").show();
+                $(".btn-custom").prop("disabled", true);
+            });
+        });
+    </script>
+</body>
+
+</html>
