@@ -1,3 +1,8 @@
+import os
+
+if not os.path.exists('processed'):
+    os.makedirs('processed')
+
 from moviepy.editor import *
 
 def pingpong_video(input_path, output_path, duration=60):
@@ -22,10 +27,15 @@ def pingpong_video(input_path, output_path, duration=60):
     final_clip = concatenate_videoclips([pingpong_clip] * (duration // int(2*clip.duration)))
     
     # Write the result to a file
-    final_clip.write_videofile(output_path, codec="libx264")
+    final_clip.write_videofile(os.path.join('processed', output_path), codec="libx264")
     
     # Write the result to a file
-    final_clip.write_videofile(output_path, codec="libx264")
+    final_clip.write_videofile(os.path.join('processed', output_path), codec="libx264")
 
 # Example usage:
 # pingpong_video("input_video.mp4", "output_video.mp4")
+
+@app.route('/download/<filename>', methods=['GET', 'POST'])
+def download(filename):
+    return send_from_directory(directory='processed', filename=filename, as_attachment=True)
+
